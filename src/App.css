@@ -1,0 +1,169 @@
+/* App.css */
+
+/* Apply a beautiful background gradient */
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #00aaff, #f8b500); /* Gradient background */
+  height: 110vh;
+  width: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the content vertically and horizontally */
+  overflow: hidden;
+  margin-top: -1%;
+  margin-left: -2%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem; /* Adds spacing between columns */
+  flex-wrap: wrap; /* Allow the layout to adjust on smaller screens */
+}
+
+.partition {
+  flex: 1;
+  min-width: 45%;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for each partition inside the partition */
+.partition-title1 {
+  color: #444;
+  font-size: 22px;
+  gap: 1rem;
+  font-weight: 600;
+  position: absolute;
+  top: 20%; 
+  left: 24.7%;
+}
+
+.partition-title2 {
+  color: #444;
+  font-size: 22px;
+  gap: 1rem;
+  font-weight: 600;
+  position: absolute;
+  top: 20%; 
+}
+
+.counter {
+  animation: fadeIn 2s ease-in-out;
+  animation: containerAnimation 1s ease-out;
+  transition: transform 2s ease-in-out; /* Smooth transition effect */
+}
+
+.login-form {
+  animation: slideIn 2s ease-in-out;
+  animation: containerAnimation 1s ease-out;
+  transition: transform 2s ease-in-out; /* Smooth transition effect */
+}
+
+input {
+  padding: 12px;
+  margin: 10px;
+  width: 90%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #e82574;
+}
+
+button {
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #e82574;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  transition: background-color 1s ease;
+}
+
+button:hover {
+  background-color: #d01a63;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #444;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes containerAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.name{
+  font-size: 0.8rem;
+  color: black;
+  position: relative;
+  top: 39.5%;
+  left: 11%;
+  text-align: right;
+
+}
+
+.logo{
+  width: 7rem;
+  height: 1.5rem;
+  position: absolute;
+  margin-bottom: 47%;
+  margin-right: 95%;
+}
